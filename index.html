@@ -1,9 +1,43 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Flagly</title>
+<style>
+body {
+  background-color: #000;
+}
+
+code {
+  margin: 50px auto;
+  padding: 10px;
+  line-height: 1.5em;
+  font-family: 'Helvetica Neue';
+  font-size: 13pt;
+  width: 800px;
+  display: block;
+  background-color: #000;
+  color: #f1f1f1;
+}
+
+</style>
 </head>
 <body>
+  <pre>
+    <code>
+    import { Component } from 'react';
+    import FLAGLY from 'flaglyco';
+
+    class Welcome extends Component {
+      render() {
+        
+        return (
+          {
+             FLAGLY.hasFeature('isNerd') :  &lt;div&gt;Hello World&lt;/div&gt; ? &lt;div&gt;Coming Soon...&lt;/div&gt;; 
+          }
+	); 
+      }
+    }
+    </code>
+  </pre>
 </body>
-<h3>FLAGLY.com</h3>
-<h5>Soon.</h5>
 </html>
